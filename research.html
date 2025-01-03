@@ -45,11 +45,23 @@
     }
 
     /* CSS styling for the section image */
+    .section-figure {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
     .section-image {
-      float: right; /* Float the image to the right */
-      margin-left: 10px; /* Add some margin to the left of the image */
-      width: 200px; /* Set the width of the image */
-      height: auto; /* Maintain aspect ratio */
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .figcaption {
+        text-align: center;
+        font-style: italic;
+        margin-top: 10px;
     }
 </style>
 </head>
@@ -69,7 +81,10 @@
   <!-- Content for the Research Page -->
   <section>
   <h2>Offshore Wind Impacts on Larval Dispersal</h2>
-    <img src="scallop_owild_may_15_alive_only_10000_scen2.gif.gif" alt="OWILD" class="section-image" style="width: 50%; height: auto;">
+    <figure class="section-figure">
+        <img src="scallop_owild_may_15_alive_only_10000_scen2.gif.gif" alt="OWILD" class="section-image">
+        <figcaption class="figcaption">This is a caption for the OWILD image.</figcaption>
+    </figure>
     <p> We assess the environmental impacts of offshore wind farm development off the East Coast of the United States on commercial fisheries of Atlantic sea scallop, 
       Atlantic surfclam, and black sea bass. The presence of large numbers of offshore wind farms along the continental shelf may lead to changes in ocean circulation and thus larval dispersal. 
       Preliminary model outputs suggest that larval dispersal is influenced by offshore wind development; however, due to circulation patterns, the distribution of the effects is neither uniform nor universally negative. 
